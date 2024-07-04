@@ -19,17 +19,17 @@ const colors = {
   searchBackground: "#18191f",
   searchText: "#ffffff",
   searchPlaceHolder: "#575a77",
-  playerBackground: "#18191f",
-  titleColor: "#ffffff",
-  timeColor: "#ffffff",
-  progressSlider: "#3e32e4",
-  progressUsed: "#ffffff",
-  progressLeft: "#151616",
-  bufferLoaded: "#1f212b",
+  playerBackground: "#000",
+  titleColor: "#16A343",
+  timeColor: "#16A343",
+  progressSlider: "#16A343",
+  progressUsed: "#16A343",
+  progressLeft: "#16A343",
+  bufferLoaded: "#16A343",
   volumeSlider: "#3e32e4",
   volumeUsed: "#ffffff",
   volumeLeft: "#151616",
-  playlistBackground: "#18191f",
+  playlistBackground: "#fff",
   playlistText: "#575a77",
   playlistBackgroundHoverActive: "#18191f",
   playlistTextHoverActive: "#ffffff",
@@ -46,6 +46,26 @@ export default function Home() {
             <span className="h-[10px] w-[10px] bg-yellow-300 rounded-full inline-block"></span>{" "}
             hello
           </span>
+          <h5 className="text-3xl font-bold text-green-600">
+            Green Dictionary
+          </h5>
+          <span className="shadow-md px-6 py-2 rounded-lg bg-blue-600 text-white">
+            <span className="h-[10px] w-[10px] bg-blue-300 rounded-full inline-block"></span>{" "}
+            phonetic: "hə'ləʊ"
+          </span>
+        </div>
+
+        <section className="mt-5 pt-4 border-solid border-0 border-t border-gray-300">
+          <span className="shadow-md px-6 py-2 rounded-lg font-semibold bg-white text-green-700 flex items-center justify-between max-w-[120px]">
+            <span className="h-[10px] w-[10px] bg-yellow-300 rounded-full inline-block"></span>
+            Origin
+          </span>
+          <p className="py-3 text-gray-600 bg-gray-100 mt-4 px-4 rounded-lg">
+            "early 19th century: variant of earlier hollo ; related to holla."
+          </p>
+        </section>
+
+        <div className="mt-4">
           <Player
             trackList={tracks}
             includeTags={false}
@@ -55,10 +75,6 @@ export default function Home() {
             autoPlayNextTrack={false}
             customColorScheme={colors}
           />
-          <span className="shadow-md px-6 py-2 rounded-lg bg-blue-600 text-white">
-            <span className="h-[10px] w-[10px] bg-blue-300 rounded-full inline-block"></span>{" "}
-            phonetic: "hə'ləʊ"
-          </span>
         </div>
       </section>
     </main>
