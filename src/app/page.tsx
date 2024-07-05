@@ -46,9 +46,12 @@ export default function Home() {
             <span className="h-[10px] w-[10px] bg-yellow-300 rounded-full inline-block"></span>{" "}
             hello
           </span>
-          <h5 className="text-3xl font-bold text-green-600">
-            Green Dictionary
-          </h5>
+          <h1 className="text-3xl font-extrabold text-gray-900 md:text-2xl lg:text-4xl">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+              greenEYE
+            </span>{" "}
+            Dictionary
+          </h1>
           <span className="shadow-md px-6 py-2 rounded-lg bg-blue-600 text-white">
             <span className="h-[10px] w-[10px] bg-blue-300 rounded-full inline-block"></span>{" "}
             phonetic: "hə'ləʊ"
@@ -64,6 +67,20 @@ export default function Home() {
             "early 19th century: variant of earlier hollo ; related to holla."
           </p>
         </section>
+
+        <section className="mt-8 shadow-2xl p-5 rounded-xl bg-gray-200">
+          <span className="shadow-md px-8 py-2 rounded-lg font-semibold bg-white text-black flex items-center justify-between max-w-[150px]">
+            <span className="h-[10px] w-[10px] bg-black rounded-full inline-block"></span>
+            Meaning
+          </span>
+        </section>
+
+        <div>
+        <span className="shadow-md px-6 py-2 rounded-lg font-semibold bg-white text-green-700 flex items-center justify-between max-w-[200px]">
+            <span className="h-[10px] w-[10px] bg-yellow-300 rounded-full inline-block"></span>
+            Part of speech
+          </span>
+        </div>
 
         <div className="mt-4">
           <Player
