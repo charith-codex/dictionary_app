@@ -68,19 +68,28 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="mt-8 shadow-2xl p-5 rounded-xl bg-gray-200">
-          <span className="shadow-md px-8 py-2 rounded-lg font-semibold bg-white text-black flex items-center justify-between max-w-[150px]">
-            <span className="h-[10px] w-[10px] bg-black rounded-full inline-block"></span>
+        <section className="mt-8 shadow-2xl p-5 rounded-xl bg-gray-100">
+          <span className="shadow-md px-8 py-2 rounded-lg font-semibold bg-gray-600 text-white flex items-center justify-between max-w-[150px]">
+            <span className="h-[10px] w-[10px] bg-white rounded-full inline-block"></span>
             Meaning
           </span>
-        </section>
 
-        <div>
-        <span className="shadow-md px-6 py-2 rounded-lg font-semibold bg-white text-green-700 flex items-center justify-between max-w-[200px]">
-            <span className="h-[10px] w-[10px] bg-yellow-300 rounded-full inline-block"></span>
-            Part of speech
-          </span>
-        </div>
+          <div>
+            <span className="shadow-md mt-4 px-3 py-2 rounded-full font-semibold bg-white text-green-700 flex items-center justify-between max-w-[330px]">
+              <span className="h-[10px] w-[10px] bg-yellow-300 rounded-full inline-block"></span>
+              Part of speech
+              <span className="shadow-md px-6 py-2 rounded-full font-semibold bg-green-600 text-white flex items-center justify-between max-w-[400px]">
+                Exclamation
+              </span>
+            </span>
+            <p className="py-3 text-gray-600 bg-white mt-4 px-4 rounded-lg">
+              "used as a greeting or to begin a phone conversation."
+            </p>
+            <p className="py-3 text-gray-600 bg-white mt-4 px-4 rounded-lg">
+              "hello there, Katie!"
+            </p>
+          </div>
+        </section>
 
         <div className="mt-4">
           <Player
