@@ -2,6 +2,7 @@
 import Banner from "@/components/Banner";
 import Player from "@madzadev/audio-player";
 import "@madzadev/audio-player/dist/index.css";
+import { useState } from "react";
 
 const tracks = [
   {
@@ -36,10 +37,11 @@ const colors = {
 };
 
 export default function Home() {
+  const [word, setWord] = useState("");
   return (
     <main>
-      <Banner />
-
+      <Banner changeWord={setWord} />
+      <h1>{word}</h1>
       <section className="absolute top-[27vh] bg-white w-[80%] ml-[10%] shadow-2xl p-5 rounded-2xl">
         <div className="flex justify-between">
           <span className="shadow-md px-6 py-2 rounded-lg bg-green-600 text-white">
@@ -54,7 +56,7 @@ export default function Home() {
           </h1>
           <span className="shadow-md px-6 py-2 rounded-lg bg-blue-600 text-white">
             <span className="h-[10px] w-[10px] bg-blue-300 rounded-full inline-block"></span>{" "}
-            phonetic: "hə'ləʊ"
+            {`phonetic:"hə'ləʊ"`}
           </span>
         </div>
 
