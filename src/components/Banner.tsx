@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Banner = ({ changeWord }: { changeWord: any }) => {
   const [value, setValue] = useState("");
-  const [dictionary, setDictionary] = useState<any>();
+
   return (
     <div className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% h-[40vh]">
       <form className="max-w-md mx-auto">
